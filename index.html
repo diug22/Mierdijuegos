@@ -1,1 +1,78 @@
-Hola MUNDO
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de archivos HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 20px;
+    }
+
+    li {
+      padding: 10px;
+      background-color: #FFF;
+      border: 1px solid #CCC;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4CAF50;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de archivos HTML</h1>
+  <ul id="file-list"></ul>
+
+  <script>
+    // Aquí deberás colocar la lógica para obtener la lista de archivos .html desde el servidor
+    // Ejemplo de una lista de archivos HTML obtenida desde el servidor
+    const fileList = [
+      { name: "archivo1.html", path: "/ruta/archivo1.html" },
+      { name: "archivo2.html", path: "/ruta/archivo2.html" },
+      { name: "archivo3.html", path: "/ruta/archivo3.html" },
+    ];
+
+    function generateFileList() {
+      const listElement = document.getElementById("file-list");
+
+      fileList.forEach((file) => {
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = file.path;
+        link.textContent = file.name;
+        listItem.appendChild(link);
+        listElement.appendChild(listItem);
+      });
+    }
+
+    generateFileList();
+  </script>
+</body>
+</html>
+
