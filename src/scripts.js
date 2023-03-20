@@ -8,25 +8,14 @@ function generateCarouselItems(fileList) {
       carouselItem.classList.add("active");
     }
 
-    const videoWrapper = document.createElement("div");
-    videoWrapper.style.position = "relative";
-    videoWrapper.style.overflow = "hidden";
-    videoWrapper.style.paddingTop = "56.25%"; // 16:9 aspect ratio
-
-    const video = document.createElement("iframe");
+    const video = document.createElement("video");
     video.src = file.videoUrl;
     video.title = file.name;
-    video.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-    video.allowFullscreen = true;
-    video.style.position = "absolute";
-    video.style.top = "0";
-    video.style.left = "0";
+    video.controls = true;
     video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.border = "0";
+    video.style.height = "auto";
 
-    videoWrapper.appendChild(video);
-    carouselItem.appendChild(videoWrapper);
+    carouselItem.appendChild(video);
 
     const carouselCaption = document.createElement("div");
     carouselCaption.classList.add("carousel-caption", "d-none", "d-md-block");

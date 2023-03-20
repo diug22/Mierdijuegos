@@ -1,7 +1,23 @@
 [
-    { "name": "ZigZagSalto ⭐7/10⭐", "path": "/juegos/zig_zag_salto" },
-    { "name": "Cazador de estrellas ⭐5/10⭐", "path": "/juegos/cazador_estrellas" },
-    { "name": "Conexión cuántica ⭐2/10⭐", "path": "/juegos/conexion_cuantica" },
-    { "name": "ColorBlitz ⭐8/10⭐", "path": "/juegos/colorblitz" }
-]
+    {
+      "name": "ZigZagSalto ⭐7/10⭐",
+      "path": "/juegos/zig_zag_salto",
+      "videoUrl": "/videos/zig_zag_salto.mp4"
+    },
+    {
+      "name": "Cazador de estrellas ⭐5/10⭐",
+      "path": "/juegos/cazador_estrellas",
+      "videoUrl": "/videos/cazador_estrellas.mp4"
+    },
+    {
+      "name": "Conexión cuántica ⭐2/10⭐",
+      "path": "/juegos/conexion_cuantica",
+      "videoUrl": "/videos/conexion_cuantica.mp4"
+    },
+    {
+      "name": "ColorBlitz ⭐8/10⭐",
+      "path": "/juegos/colorblitz",
+      "videoUrl": "/videos/colorblitz.mp4"
+    }
+  ]
   
