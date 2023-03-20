@@ -1,6 +1,6 @@
 function generateCarouselItems(fileList) {
   const carouselInner = document.querySelector(".carousel-inner");
-
+  console.log(JSON.stringify(fileList))
   fileList.forEach((file, index) => {
     const carouselItem = document.createElement("div");
     carouselItem.classList.add("carousel-item");
@@ -32,7 +32,11 @@ function generateCarouselItems(fileList) {
   });
 }
 
-fetch("src/fileList.json")
-  .then((response) => response.json())
-  .then((data) => generateCarouselItems(data))
-  .catch((error) => console.error("Error:", error));
+function init() {
+  fetch("src/fileList.json")
+    .then((response) => response.json())
+    .then((data) => generateCarouselItems(data))
+    .catch((error) => console.error("Error:", error));
+}
+
+document.addEventListener("DOMContentLoaded", init);
