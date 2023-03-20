@@ -32,7 +32,7 @@ function generateCarouselItems(fileList) {
   });
 }
 
-fetch("fileList.json")
+fetch("src/fileList.json")
   .then((response) => response.json())
   .then((data) => generateCarouselItems(data))
   .catch((error) => console.error("Error:", error));
