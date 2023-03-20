@@ -81,10 +81,10 @@ function getQueryParam(name) {
 
 
   function resizeCanvas(){
-    document.getElementById("gameCanvas").height = (window.screen.availHeight -100)
-    document.getElementById("gameCanvas").width = (window.screen.availWidth -15)
+    document.getElementById("gameCanvas").height = (window.screen.availHeight - (window.screen.availHeight*0.1))
+    document.getElementById("gameCanvas").width = (window.screen.availWidth - (window.screen.availWidth*0.1))
   }
-  
+
   function addClickEvent() {
     document.getElementById("home").onclick = goHome;
   }
