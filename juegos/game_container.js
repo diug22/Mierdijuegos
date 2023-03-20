@@ -21,7 +21,7 @@ function getQueryParam(name) {
     const header_container = document.getElementById("header");
     const cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title");
-    cardTitle.textContent = file.name;
+    cardTitle.textContent = file.name+'_';
     const grid_item = document.createElement("div");
     grid_item.classList.add("grid-item");
     grid_item.appendChild(cardTitle);
