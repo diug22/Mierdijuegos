@@ -76,6 +76,7 @@ function initGame() {
         const i = Math.floor(y / cellHeight);
         const j = Math.floor(x / cellWidth);
         const index = i * gridSize + j;
+        console.log(index)
 
         checkCorrectColor(index);
     }
