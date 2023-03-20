@@ -22,7 +22,7 @@ function generateCardItems(fileList) {
     cardText.textContent = file.rating;
 
     const link = document.createElement("a");
-    link.href = `/juegos/game_container.html?game=${encodeURIComponent(file.path)}`;
+    link.href = `/juegos/game_container.html?game=${encodeURIComponent(file.id)}`;
     link.appendChild(img);
 
     cardBody.appendChild(cardTitle);
