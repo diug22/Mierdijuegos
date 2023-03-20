@@ -2,14 +2,12 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 canvas {
     box-sizing: border-box;
-    height: 90%;
-    width: 90%;
 }
 
 .card-title {
@@ -17,7 +15,7 @@ canvas {
     font-size: 18px;
     color:#4CAF50 !important;
     margin: auto;
-    padding-left: 20px;
+    padding-left: 8px;
     padding-bottom: 8px;
   }
   
@@ -26,7 +24,6 @@ canvas {
     color: #777;
     margin:auto;
     text-align: right;
-    padding-right: 20px;
   }
 
   .grid-container {
@@ -36,7 +33,7 @@ canvas {
 
   .grid-item-button{
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 5px;
   }
  

@@ -70,6 +70,7 @@ function getQueryParam(name) {
 
         await loadAndExecuteScript(gameId);
         addClickEvent()
+        resizeCanvas()
       } catch (error) {
         console.error("Error:",JSON.stringify(error));
       }
@@ -78,12 +79,17 @@ function getQueryParam(name) {
     }
   }
 
+
+  function resizeCanvas(){
+    document.getElementById("gameCanvas").height = (window.screen.availHeight -100)
+    document.getElementById("gameCanvas").width = (window.screen.availWidth -15)
+  }
+  
   function addClickEvent() {
     document.getElementById("home").onclick = goHome;
   }
   
   function goHome() {
-    console.log('HOLA');
     window.location.href = '/';
   }
 
