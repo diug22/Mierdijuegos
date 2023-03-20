@@ -17,11 +17,11 @@ function getQueryParam(name) {
     }
   }
   
-  async function loadAndExecuteScript(path) {
+  async function loadAndExecuteScript(id) {
     try {
         const fileList = await loadFileList();
         console.log(fileList)
-        const fileInfo = fileList.find((f) => f.path === path);
+        const fileInfo = fileList.find((f) => f.id === id);
         var script = document.createElement("script");
         script.src = fileInfo.scriptUrl;
         script.onload = function () {
@@ -34,10 +34,10 @@ function getQueryParam(name) {
   }
 
   async function loadGame() {
-    const gamePath = decodeURIComponent(getQueryParam("game"));
-    if (gamePath) {
+    const gameId = decodeURIComponent(getQueryParam("game"));
+    if (gameId) {
       try {
-        const response = await fetch(gamePath);
+        const response = await fetch(gameId);
         if (!response.ok) {
           throw new Error("Error al cargar el juego");
         }
@@ -47,7 +47,7 @@ function getQueryParam(name) {
         const gameDoc = parser.parseFromString(html, "text/html");
         document.getElementById("game-container").innerHTML += html;
 
-        await loadAndExecuteScript(gamePath);
+        await loadAndExecuteScript(gameId);
       } catch (error) {
         console.error("Error:",JSON.stringify(error));
       }

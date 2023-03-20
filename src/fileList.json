@@ -4,27 +4,31 @@
       "rating" : "7/10⭐",
       "path": "/juegos/zig_zag_salto",
       "imageUrl": "/videos/zig_zag_salto.gif",
-      "scriptUrl": "/juegos/zig_zag_salto/zig_zag_salto.js"
+      "scriptUrl": "/juegos/zig_zag_salto/zig_zag_salto.js",
+      "id" : "zig_zag_salto"
     },
     {
       "name": "Cazador de estrellas",
       "rating" : "5/10⭐",
       "path": "/juegos/cazador_estrellas",
       "imageUrl": "/videos/cazador_estrellas.gif",
-      "scriptUrl": "/juegos/cazador_estrellas/cazador_estrellas.js"
+      "scriptUrl": "/juegos/cazador_estrellas/cazador_estrellas.js",
+      "id" : "cazador_estrellas"
     },
     {
       "name": "Conexión cuántica",
       "rating" : "2/10⭐",
       "path": "/juegos/conexion_cuantica",
       "imageUrl": "/videos/conexion_cuantica.gif",
-      "scriptUrl": "/juegos/conexion_cuantica/conexion_cuantica.js"
+      "scriptUrl": "/juegos/conexion_cuantica/conexion_cuantica.js",
+      "id" : "conexion_cuantica"
     },
     {
       "name": "ColorBlitz",
       "rating" : "8/10⭐",
       "path": "/juegos/colorblitz",
       "imageUrl": "/videos/colorblitz.gif",
-      "scriptUrl": "/juegos/colorblitz/colorblitz.js"
+      "scriptUrl": "/juegos/colorblitz/colorblitz.js",
+      "id" : "colorblitz"
     }
   ]
