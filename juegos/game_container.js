@@ -81,8 +81,8 @@ function getQueryParam(name) {
 
 
   function resizeCanvas(){
-    document.getElementById("gameCanvas").height = (window.screen.availHeight - (window.screen.availHeight*0.2))
-    document.getElementById("gameCanvas").width = (window.screen.availWidth - (window.screen.availWidth*0.2))
+    document.getElementById("gameCanvas").height = (window.screen.availHeight - (window.screen.availHeight*0.25))
+    document.getElementById("gameCanvas").width = (window.screen.availWidth - (window.screen.availWidth*0.10))
   }
 
   function addClickEvent() {
