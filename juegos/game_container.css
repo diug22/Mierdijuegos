@@ -8,7 +8,6 @@
 }
 
 canvas {
-    border: 5px solid #4CAF50; /* ajuste el grosor del borde aquí*/
     box-sizing: border-box;
     height: 90%;
     width: 90%;
