@@ -21,7 +21,7 @@ function getQueryParam(name) {
     const header_container = document.getElementById("header");
     const cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title");
-    cardTitle.textContent = file.name+'_';
+    cardTitle.textContent = file.name;
     const grid_item = document.createElement("div");
     grid_item.classList.add("grid-item");
     grid_item.appendChild(cardTitle);
@@ -81,8 +81,8 @@ function getQueryParam(name) {
 
 
   function resizeCanvas(){
-    document.getElementById("gameCanvas").height = (window.screen.availHeight - (window.screen.availHeight*0.1))
-    document.getElementById("gameCanvas").width = (window.screen.availWidth - (window.screen.availWidth*0.1))
+    document.getElementById("gameCanvas").height = (window.screen.availHeight - (window.screen.availHeight*0.2))
+    document.getElementById("gameCanvas").width = (window.screen.availWidth - (window.screen.availWidth*0.2))
   }
 
   function addClickEvent() {
