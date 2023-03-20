@@ -1,21 +1,25 @@
 [
     {
-      "name": "ZigZagSalto ⭐7/10⭐",
+      "name": "ZigZagSalto",
+      "rating" : "7/10⭐",
       "path": "/juegos/zig_zag_salto",
       "imageUrl": "/videos/zig_zag_salto.gif"
     },
     {
-      "name": "Cazador de estrellas ⭐5/10⭐",
+      "name": "Cazador de estrellas",
+      "rating" : "5/10⭐",
       "path": "/juegos/cazador_estrellas",
       "imageUrl": "/videos/cazador_estrellas.gif"
     },
     {
-      "name": "Conexión cuántica ⭐2/10⭐",
+      "name": "Conexión cuántica",
+      "rating" : "2/10⭐",
       "path": "/juegos/conexion_cuantica",
       "imageUrl": "/videos/conexion_cuantica.gif"
     },
     {
-      "name": "ColorBlitz ⭐8/10⭐",
+      "name": "ColorBlitz",
+      "rating" : "8/10⭐",
       "path": "/juegos/colorblitz",
       "imageUrl": "/videos/colorblitz.gif"
     }
