@@ -1,6 +1,6 @@
 function generateCarouselItems(fileList) {
   const carouselInner = document.querySelector(".carousel-inner");
-  console.log(JSON.stringify(fileList))
+
   fileList.forEach((file, index) => {
     const carouselItem = document.createElement("div");
     carouselItem.classList.add("carousel-item");
@@ -8,24 +8,27 @@ function generateCarouselItems(fileList) {
       carouselItem.classList.add("active");
     }
 
-    const video = document.createElement("video");
-    video.src = file.videoUrl;
-    video.title = file.name;
-    video.controls = true;
-    video.style.width = "100%";
-    video.style.height = "auto";
+    const link = document.createElement("a");
+    link.href = file.path;
 
-    carouselItem.appendChild(video);
+    const img = document.createElement("img");
+    img.src = file.imageUrl;
+    img.alt = file.name;
+    img.style.width = "100%";
+    img.style.height = "auto";
+
+    link.appendChild(img);
+    carouselItem.appendChild(link);
 
     const carouselCaption = document.createElement("div");
     carouselCaption.classList.add("carousel-caption", "d-none", "d-md-block");
 
-    const link = document.createElement("a");
-    link.href = file.path;
-    link.textContent = file.name;
-    link.style.color = "white";
+    const captionLink = document.createElement("a");
+    captionLink.href = file.path;
+    captionLink.textContent = file.name;
+    captionLink.style.color = "white";
 
-    carouselCaption.appendChild(link);
+    carouselCaption.appendChild(captionLink);
     carouselItem.appendChild(carouselCaption);
 
     carouselInner.appendChild(carouselItem);
