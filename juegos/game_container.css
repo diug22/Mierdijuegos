@@ -5,11 +5,9 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #4CAF50;
 }
 
 canvas {
-    border: 5px solid #4CAF50; /* ajuste el grosor del borde aquí*/
     box-sizing: border-box;
     height: 90%;
     width: 90%;
