@@ -16,12 +16,33 @@ function getQueryParam(name) {
       return [];
     }
   }
+  async function loadNameAndRating(file){
+
+    const header_container = document.getElementById("header");
+    const cardTitle = document.createElement("h5");
+    cardTitle.classList.add("card-title");
+    cardTitle.textContent = file.name;
+    const grid_item = document.createElement("div");
+    grid_item.classList.add("grid-item");
+    grid_item.appendChild(cardTitle);
+    header_container.insertBefore(grid_item,header_container.firstChild);
+
+
+    const game_container = document.getElementById("game-container");
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+    cardText.textContent = file.rating;
+    game_container.appendChild(cardText);
+
+    
+  }
   
   async function loadAndExecuteScript(id) {
     try {
         const fileList = await loadFileList();
         console.log(fileList)
         const fileInfo = fileList.find((f) => f.id === id);
+        loadNameAndRating(fileInfo)
         var script = document.createElement("script");
         script.src = fileInfo.scriptUrl;
         script.onload = function () {
@@ -48,6 +69,7 @@ function getQueryParam(name) {
         document.getElementById("game-container").innerHTML += html;
 
         await loadAndExecuteScript(gameId);
+        addClickEvent()
       } catch (error) {
         console.error("Error:",JSON.stringify(error));
       }
@@ -56,4 +78,14 @@ function getQueryParam(name) {
     }
   }
 
+  function addClickEvent() {
+    document.getElementById("home").onclick = goHome;
+  }
+  
+  function goHome() {
+    console.log('HOLA');
+    window.location.href = '/';
+  }
+
   document.addEventListener("DOMContentLoaded", loadGame);
+
