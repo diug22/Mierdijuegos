@@ -1,7 +1,7 @@
 function generateCardItems(fileList) {
   const cardContainer = document.getElementById("card-container");
 
-  fileList.forEach((file) => {
+  fileList.filter(f => f.is_visible).forEach((file) => {
     const card = document.createElement("div") ;
     card.classList.add("card");
 

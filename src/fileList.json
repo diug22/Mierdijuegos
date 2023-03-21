@@ -5,7 +5,8 @@
       "path": "/juegos/zig_zag_salto",
       "imageUrl": "/videos/zig_zag_salto.gif",
       "scriptUrl": "/juegos/zig_zag_salto/zig_zag_salto.js",
-      "id" : "zig_zag_salto"
+      "id" : "zig_zag_salto",
+      "is_visible": true
     },
     {
       "name": "Cazador de estrellas",
@@ -13,7 +14,8 @@
       "path": "/juegos/cazador_estrellas",
       "imageUrl": "/videos/cazador_estrellas.gif",
       "scriptUrl": "/juegos/cazador_estrellas/cazador_estrellas.js",
-      "id" : "cazador_estrellas"
+      "id" : "cazador_estrellas",
+      "is_visible": true
     },
     {
       "name": "Conexión cuántica",
@@ -21,7 +23,8 @@
       "path": "/juegos/conexion_cuantica",
       "imageUrl": "/videos/conexion_cuantica.gif",
       "scriptUrl": "/juegos/conexion_cuantica/conexion_cuantica.js",
-      "id" : "conexion_cuantica"
+      "id" : "conexion_cuantica",
+      "is_visible": true
     },
     {
       "name": "ColorBlitz",
@@ -29,13 +32,15 @@
       "path": "/juegos/colorblitz",
       "imageUrl": "/videos/colorblitz.gif",
       "scriptUrl": "/juegos/colorblitz/colorblitz.js",
-      "id" : "colorblitz"
+      "id" : "colorblitz",
+      "is_visible": true
     },
     {
       "name": "Wave River",
       "rating" : "2/10⭐",
       "imageUrl": "/videos/wave_river.gif",
       "scriptUrl": "/juegos/wave_river/wave_river.js",
-      "id" : "wave_river"
+      "id" : "wave_river",
+      "is_visible": false
     }
   ]
