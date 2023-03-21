@@ -42,5 +42,13 @@
       "scriptUrl": "/juegos/wave_river/wave_river.js",
       "id" : "wave_river",
       "is_visible": true
+    },
+    {
+      "name": "Sound Scape",
+      "rating" : "2/10⭐",
+      "imageUrl": "/videos/wave_river.gif",
+      "scriptUrl": "/juegos/sound_scape/sound_scape.js",
+      "id" : "sound_scape",
+      "is_visible": true
     }
   ]
