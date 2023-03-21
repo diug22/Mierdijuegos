@@ -41,6 +41,6 @@
       "imageUrl": "/videos/wave_river.gif",
       "scriptUrl": "/juegos/wave_river/wave_river.js",
       "id" : "wave_river",
-      "is_visible": false
+      "is_visible": true
     }
   ]
