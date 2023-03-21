@@ -30,5 +30,12 @@
       "imageUrl": "/videos/colorblitz.gif",
       "scriptUrl": "/juegos/colorblitz/colorblitz.js",
       "id" : "colorblitz"
+    },
+    {
+      "name": "Wave River",
+      "rating" : "2/10⭐",
+      "imageUrl": "/videos/wave_river.gif",
+      "scriptUrl": "/juegos/wave_river/wave_river.js",
+      "id" : "wave_river"
     }
   ]
