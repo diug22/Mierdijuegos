@@ -256,10 +256,17 @@ function aStar(maze, start, goal) {
 }
 
 
+ 
+let audioContext = null;
 
+function initAudioContext() {
+    if (!audioContext) {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    }
+}
 function playAudioHint(player, maze) {
     // Crear una instancia de AudioContext
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    initAudioContext();
 
     // Definir la posición de salida en el laberinto
     const exitPosition = {
