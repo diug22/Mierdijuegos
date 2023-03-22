@@ -50,5 +50,13 @@
       "scriptUrl": "/juegos/sound_scape/sound_scape.js",
       "id" : "sound_scape",
       "is_visible": true
+    },
+    {
+      "name": "Boucing Bots",
+      "rating" : "2/10⭐",
+      "imageUrl": "/videos/wave_river.gif",
+      "scriptUrl": "/juegos/boucing_bots/boucing_bots.js",
+      "id" : "boucing_bots",
+      "is_visible": false 
     }
   ]
