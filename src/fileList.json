@@ -45,8 +45,8 @@
     },
     {
       "name": "Sound Scape",
-      "rating" : "2/10⭐",
-      "imageUrl": "/videos/wave_river.gif",
+      "rating" : "9/10⭐",
+      "imageUrl": "/videos/sound_scape.png",
       "scriptUrl": "/juegos/sound_scape/sound_scape.js",
       "id" : "sound_scape",
       "is_visible": true
